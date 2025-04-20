@@ -1,14 +1,16 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <a href="/" className="navbar__logo">Map2Map</a>
-      <div className="navbar__links">
-        <a href="#services" className="navbar__link">Services</a>
-        <a href="#contact" className="navbar__link">Contact</a>
-      </div>
-    </nav>
+    <header>
+      <Link to="/" className="logo">Map2Map</Link>
+      <nav>
+        <Link to="/services">Services</Link>
+        <Link to="/prices">Pricing</Link>
+        <Link to="/faq">FAQ</Link>
+        <a href="mailto:sales@map2map.com">Contact</a>
+      </nav>
+    </header>
   );
 };
 

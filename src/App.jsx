@@ -1,23 +1,19 @@
-import React from 'react';
-import Navbar from './components/Navbar'; 
-import Services from './components/Services'; 
-import BottomCTA from './components/BottomCTA'; 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Pricing from './pages/Pricing';
+import FAQ from './pages/FAQ';
+import './App.css';
 
-import { useEffect } from 'react';
-
-const App = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+function App() {
   return (
-    <div>
-      <Navbar />  
-      <Services />  
-      <BottomCTA />  
-    </div>
+    <Router basename="/">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/prices" element={<Pricing />} />
+        <Route path="/faq" element={<FAQ />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;

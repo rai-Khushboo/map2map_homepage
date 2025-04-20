@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Map2Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #4285f4;
+            --accent: #34a853;
+            --bg: #ffffff;
+            --text: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+
+        header {
+            background-color: var(--bg);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 6rem auto 2rem;
+            padding: 0 1rem;
+        }
+
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .faq-item h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .contact-section a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Map2Map</a>
+            <div class="nav-links">
+                <a href="services.html">Services</a>
+                <a href="prices.html">Prices</a>
+                <a href="faq.html">FAQ</a>
+                <a href="mailto:sales@map2map.com">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="faq-section">
+            <div class="faq-item">
+                <h3>What is Map2Map?</h3>
+                <p>Map2Map is a specialized service that helps businesses optimize and manage their Google Maps listings. We ensure your business information is accurate, up-to-date, and optimized for maximum visibility on Google Maps.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why choose Map2Map?</h3>
+                <p>We offer expert management of your Google Maps presence, ensuring accurate business information, enhanced visibility, and improved local SEO. Our team handles everything from listing creation to ongoing optimization.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How often can I update my profile?</h3>
+                <p>You can update your profile information as often as needed. We recommend regular updates to keep your listing fresh and accurate, and our team is here to help implement these changes efficiently.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What services do you offer?</h3>
+                <p>Our services include new listing creation, listing updates and optimization, accurate business information corrections, and visual enhancements for your Google Maps presence.</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h3>Have more questions?</h3>
+            <p>Contact us at <a href="mailto:sales@map2map.com">sales@map2map.com</a></p>
+        </div>
+    </main>
+</body>
+</html> 
